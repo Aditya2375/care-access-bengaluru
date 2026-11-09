@@ -1,0 +1,146 @@
+{
+  "summary": {
+    "measured_at": "2026-11-09T15:57:51.201Z",
+    "proxy_url": "http://localhost:3777",
+    "total": 12,
+    "passed": 12,
+    "pass_rate": 1,
+    "mean_latency_ms": 3499,
+    "min_latency_ms": 2513,
+    "max_latency_ms": 4476
+  },
+  "results": [
+    {
+      "persona": "persona-a",
+      "area": "Shivajinagar",
+      "need": "general",
+      "language": "EN",
+      "expected_facility_type": "uphc",
+      "pass": true,
+      "latency_ms": 4476,
+      "error": null,
+      "snippet": "**Recommended facility type:** Urban Primary Health Centre (UPHC) – these centres provide basic general outpatient care close to your neighbourhood.\n\n**Why:** A UPHC is the first point of contact for general health concerns and is equipped to handle routine consultations, minor illnesses, and preven"
+    },
+    {
+      "persona": "persona-b",
+      "area": "Rajajinagar",
+      "need": "fever",
+      "language": "KN",
+      "expected_facility_type": "uphc",
+      "pass": true,
+      "latency_ms": 3037,
+      "error": null,
+      "snippet": "**ಶಿಫಾರಸು ಮಾಡಲಾದ ಆರೋಗ್ಯ ಘಟಕ:**  \nಉಚಿತ ಶಹರ ಆರೋಗ್ಯ ಕೇಂದ್ರ (UPHC) – ಇದು ಸಾಮಾನ್ಯ ಹಾಗೂ ಜ್ವರದ ತಪಾಸಣೆಗೆ ಸೂಕ್ತ, ಮತ್ತು ನಿಮ್ಮ ಸರ್ಕಾರಿ ಗುರುತಿನ ಪತ್ರದೊಂದಿಗೆ ನೊಂದಾಯಿಸಿಕೊಳ್ಳಬಹುದು.\n\n**ಶಿಫಾರಸು ಮಾಡಿದ ಸೌಲಭ್ಯಗಳು (ಗರಿಷ್ಟ 3):**\n\n| ಹೆಸರು | ವಿಳಾಸ | ದೂರವಾಣಿ | ಸಮಯ |\n|------|--------|----------|------|\n| **BBMP UPHC ರಾಜಾಜಿನಗರ"
+    },
+    {
+      "persona": "persona-c",
+      "area": "Jayanagar",
+      "need": "maternal",
+      "language": "EN",
+      "expected_facility_type": "referral_hospital",
+      "pass": true,
+      "latency_ms": 3861,
+      "error": null,
+      "snippet": "**Recommended facility type:** Urban Primary Health Centre (UPHC) – these centres provide comprehensive maternal care, including antenatal check‑ups and basic obstetric services, and are the first point of contact for pregnant residents.\n\n**Matching facilities (up to three):**\n\n| # | Facility | Addr"
+    },
+    {
+      "persona": "persona-d",
+      "area": "Malleswaram",
+      "need": "child",
+      "language": "HI",
+      "expected_facility_type": "uphc",
+      "pass": true,
+      "latency_ms": 3480,
+      "error": null,
+      "snippet": "**सिफ़ारिश किया गया सुविधा प्रकार:** बाल‑देखभाल के लिए **UPHC (शहरी प्राथमिक स्वास्थ्य केंद्र)** सबसे उपयुक्त है क्योंकि यह सामान्य एवं बाल‑संबंधी सेवाएँ प्रदान करता है और आपके पास सरकारी पहचान‑पत्र है।\n\n**सुझाए गए निकटतम सुविधाएँ**\n\n| # | नाम | पता | फ़ोन | कार्य समय |\n|---|-----|------|------|----"
+    },
+    {
+      "persona": "persona-e",
+      "area": "Whitefield",
+      "need": "cardiac",
+      "language": "EN",
+      "expected_facility_type": "government_specialty",
+      "pass": true,
+      "latency_ms": 2513,
+      "error": null,
+      "snippet": "**Recommended facility type:** Government specialty hospital – these hospitals have dedicated cardiac departments and can see patients with a government ID or referral.\n\n**Matching facilities (up to three):**\n\n| # | Facility | Address | Phone | Timings (OPD) |\n|---|----------|---------|-------|-----"
+    },
+    {
+      "persona": "persona-f",
+      "area": "Lakkasandra",
+      "need": "mental",
+      "language": "KN",
+      "expected_facility_type": "government_specialty",
+      "pass": true,
+      "latency_ms": 3130,
+      "error": null,
+      "snippet": "**ಶಿಫಾರಸು ಮಾಡಲಾದ ಸಂಸ್ಥೆಯ ಪ್ರಕಾರ:** ಸರ್ಕಾರಿ ವಿಶೇಷ ಆಸ್ಪತ್ರೆ (ಮೆಂಟಲ್ ಹೆಲ್ತ್‌ಗಾಗಿ)\n\n**ಯಾಕೆ?** ಮೆಂಟಲ್‌ ಆರೋಗ್ಯ ಸೇವೆಗಳಿಗೆ ವಿಶೇಷ ಪರಿಣತಿ ಹಾಗೂ ಸಮಗ್ರ ಚಿಕಿತ್ಸೆ ನೀಡುವ ಸರ್ಕಾರಿ ವಿಶೇಷ ಆಸ್ಪತ್ರೆಗಳು (ಉದಾ. NIMHANS) ಹೆಚ್ಚು ಸೂಕ್ತ. ನಿಮ್ಮ ಬಳಿ ಸರ್ಕಾರಿ ಗುರುತಿನಪತ್ರವಿರುವುದರಿಂದ ಅಗತ್ಯ ದಾಖಲೆಗಳನ್ನು ಸುಲಭವಾಗಿ ತೋರಿಸಬಹುದು.\n\n**ಶಿಫಾರಸಾದ"
+    },
+    {
+      "persona": "persona-g",
+      "area": "Hombegowda Nagar",
+      "need": "cancer",
+      "language": "EN",
+      "expected_facility_type": "government_specialty",
+      "pass": true,
+      "latency_ms": 3979,
+      "error": null,
+      "snippet": "**Recommended facility type:** Government specialty cancer hospital  \n\n**Why:** For cancer care, a government specialty oncology centre provides the necessary diagnostics, treatment (radiation, chemotherapy, surgery) and follow‑up services that primary health centres cannot.\n\n**Matching facilities**"
+    },
+    {
+      "persona": "persona-h",
+      "area": "Yelahanka",
+      "need": "vaccination",
+      "language": "KN",
+      "expected_facility_type": "uphc",
+      "pass": true,
+      "latency_ms": 4250,
+      "error": null,
+      "snippet": "**ಸಲಹೆ ನೀಡಲಾಗುವ ಸೌಲಭ್ಯ ಪ್ರಕಾರ:** ಉಪಹಾರ ಕೇಂದ್ರ (UPHC) – ಇಲ್ಲಿ ನಿಮ್ಮ ಟೀಕಾಕರಣ (vaccination) ಸೇವೆ ಲಭ್ಯ.\n\n**ಏಕೆ?** UPHC ಗಳು ಪ್ರಾಥಮಿಕ ಆರೋಗ್ಯ ಸೇವೆ, ಮಕ್ಕಳ ಹಾಗೂ ಪ್ರಾದೇಶಿಕ ಜನಸಾಮಾನ್ಯರಿಗೆ ಉಚಿತ ಟೀಕಾಕರಣ ಮತ್ತು ಇತರ ಮೂಲಸೇವೆಗಳನ್ನು ನೀಡುತ್ತವೆ. ನಿಮ್ಮ ಪ್ರದೇಶ Yelahanka ನಲ್ಲಿ ಇದು ಸಮೀಪದಲ್ಲಿರುವ ಮತ್ತು ಸರಿಯಾದ ಆಯ್ಕೆ.\n\n**ಶಿಫಾರಸು"
+    },
+    {
+      "persona": "persona-i",
+      "area": "HSR Layout",
+      "need": "dental",
+      "language": "EN",
+      "expected_facility_type": "referral_hospital",
+      "pass": true,
+      "latency_ms": 3430,
+      "error": null,
+      "snippet": "**Recommended Facility Type:** Referral Hospital – these hospitals provide comprehensive outpatient services, including dental care, and accept government‑issued IDs.\n\n### Matching Facilities (up to three)\n\n| # | Facility | Address | Phone | Timings |\n|---|----------|---------|-------|---------|\n| 1"
+    },
+    {
+      "persona": "persona-j",
+      "area": "Dharmaram College Post",
+      "need": "child",
+      "language": "EN",
+      "expected_facility_type": "government_specialty",
+      "pass": true,
+      "latency_ms": 3205,
+      "error": null,
+      "snippet": "**Recommended facility type:** Urban Primary Health Centre (UPHC) – these centres provide comprehensive child health services and are easily accessible for routine care.\n\n**Why:** UPHCs are government‑run clinics that handle child health (growth monitoring, immunisation, common illnesses) and accept"
+    },
+    {
+      "persona": "persona-k",
+      "area": "Shivajinagar",
+      "need": "injury",
+      "language": "HI",
+      "expected_facility_type": "referral_hospital",
+      "pass": true,
+      "latency_ms": 3306,
+      "error": null,
+      "snippet": "**सिफ़ारिश किया गया सुविधा प्रकार:** **रेफ़रल हॉस्पिटल** – चोट (injury) के उपचार के लिए यह सुविधा विशेष रूप से उपयुक्त है, क्योंकि यह आपातकालीन और सामान्य दोनों प्रकार की सेवाएँ प्रदान करती है।\n\n**सुझाए गए निकटतम 3 सरकारी सुविधाएँ**\n\n| # | सुविधा का नाम | पता | फ़ोन | समय |\n|---|--------------------"
+    },
+    {
+      "persona": "persona-l",
+      "area": "Rajajinagar",
+      "need": "general",
+      "language": "EN",
+      "expected_facility_type": "uphc",
+      "pass": true,
+      "latency_ms": 3322,
+      "error": null,
+      "snippet": "**Recommended Facility Type:** Urban Primary Health Centre (UPHC) – the nearest UPHC provides comprehensive general outpatient care and is the first point of contact for non‑emergency health needs.\n\n**Why this facility?**  \nUPHCs are government‑run centres that handle routine general consultations, "
+    }
+  ]
+}

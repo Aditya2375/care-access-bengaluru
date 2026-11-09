@@ -1,0 +1,13 @@
+{
+  "name": "care-access-proxy",
+  "version": "1.0.0",
+  "description": "Thin Node proxy for CareAccess Bengaluru — holds the Orchestrate API key server-side.",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}

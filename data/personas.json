@@ -1,0 +1,134 @@
+[
+  {
+    "id": "persona-a",
+    "name": "Persona A",
+    "area": "Shivajinagar",
+    "zone": "Central",
+    "need": "general",
+    "age_group": "adult",
+    "has_id": true,
+    "language": "en",
+    "expected_facility_type": "uphc"
+  },
+  {
+    "id": "persona-b",
+    "name": "Persona B",
+    "area": "Rajajinagar",
+    "zone": "West",
+    "need": "fever",
+    "age_group": "adult",
+    "has_id": true,
+    "language": "kn",
+    "expected_facility_type": "uphc"
+  },
+  {
+    "id": "persona-c",
+    "name": "Persona C",
+    "area": "Jayanagar",
+    "zone": "South",
+    "need": "maternal",
+    "age_group": "adult",
+    "has_id": true,
+    "language": "en",
+    "expected_facility_type": "referral_hospital"
+  },
+  {
+    "id": "persona-d",
+    "name": "Persona D",
+    "area": "Malleswaram",
+    "zone": "West",
+    "need": "child",
+    "age_group": "child",
+    "has_id": false,
+    "language": "hi",
+    "expected_facility_type": "uphc"
+  },
+  {
+    "id": "persona-e",
+    "name": "Persona E",
+    "area": "Whitefield",
+    "zone": "East",
+    "need": "cardiac",
+    "age_group": "senior",
+    "has_id": true,
+    "language": "en",
+    "expected_facility_type": "government_specialty"
+  },
+  {
+    "id": "persona-f",
+    "name": "Persona F",
+    "area": "Lakkasandra",
+    "zone": "South",
+    "need": "mental",
+    "age_group": "adult",
+    "has_id": true,
+    "language": "kn",
+    "expected_facility_type": "government_specialty"
+  },
+  {
+    "id": "persona-g",
+    "name": "Persona G",
+    "area": "Hombegowda Nagar",
+    "zone": "South",
+    "need": "cancer",
+    "age_group": "adult",
+    "has_id": true,
+    "language": "en",
+    "expected_facility_type": "government_specialty"
+  },
+  {
+    "id": "persona-h",
+    "name": "Persona H",
+    "area": "Yelahanka",
+    "zone": "North",
+    "need": "vaccination",
+    "age_group": "child",
+    "has_id": false,
+    "language": "kn",
+    "expected_facility_type": "uphc"
+  },
+  {
+    "id": "persona-i",
+    "name": "Persona I",
+    "area": "HSR Layout",
+    "zone": "South",
+    "need": "dental",
+    "age_group": "adult",
+    "has_id": true,
+    "language": "en",
+    "expected_facility_type": "referral_hospital"
+  },
+  {
+    "id": "persona-j",
+    "name": "Persona J",
+    "area": "Dharmaram College Post",
+    "zone": "South",
+    "need": "child",
+    "age_group": "child",
+    "has_id": true,
+    "language": "en",
+    "expected_facility_type": "government_specialty"
+  },
+  {
+    "id": "persona-k",
+    "name": "Persona K",
+    "area": "Shivajinagar",
+    "zone": "Central",
+    "need": "injury",
+    "age_group": "adult",
+    "has_id": false,
+    "language": "hi",
+    "expected_facility_type": "referral_hospital"
+  },
+  {
+    "id": "persona-l",
+    "name": "Persona L",
+    "area": "Rajajinagar",
+    "zone": "West",
+    "need": "general",
+    "age_group": "senior",
+    "has_id": true,
+    "language": "en",
+    "expected_facility_type": "uphc"
+  }
+]
