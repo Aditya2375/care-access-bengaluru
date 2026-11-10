@@ -499,22 +499,32 @@ el("intake-form").addEventListener("submit", async (e) => {
 
   const payload = { area, need, has_id, language };
 
-  try {
-    const response = await fetch("/api/navigate", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
+  // Try the hosted proxy first (GitHub Pages deployment), then same-origin
+  // (when the proxy serves the app itself), then the offline fallback.
+  const endpoints = ["https://care-access-bengaluru.onrender.com/api/navigate", "/api/navigate"];
+  let lastError = null;
+  for (const endpoint of endpoints) {
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
 
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      const data = await response.json();
+      setLoading(false);
+      renderResults(parseAgentResponse(data));
+      return;
+    } catch (err) {
+      lastError = err;
     }
+  }
 
-    const data = await response.json();
-    setLoading(false);
-    renderResults(parseAgentResponse(data));
-
-  } catch (_err) {
+  {
     // Fetch failed (network error, proxy unreachable) — local fallback
     setLoading(false);
     const { recommendedType, facilities, callAhead } = offlineLookup(area, need);
