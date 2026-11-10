@@ -258,10 +258,26 @@ const server = http.createServer(async (req, res) => {
   const { method, url } = req;
   const urlPath = url.split("?")[0];
 
-  // CORS headers for local dev (browser same-origin in production)
+  // CORS: the web app is served from GitHub Pages; local dev uses file:// or localhost
+  const origin = req.headers.origin || "";
+  const allowed = [
+    "https://aditya2375.github.io",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+  ];
+  if (allowed.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+    res.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  }
   res.setHeader("X-Content-Type-Options", "nosniff");
 
   try {
+    if (method === "OPTIONS" && urlPath === "/api/navigate") {
+      res.writeHead(204);
+      return res.end();
+    }
+
     if (method === "GET" && urlPath === "/health") {
       return sendJson(res, 200, { status: "ok" });
     }
